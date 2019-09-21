@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_userImage"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right|center"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Robert De Gar"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_userChat"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are you planning anything for the..."
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
